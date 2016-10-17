@@ -15,8 +15,6 @@ such that they add up to a specific target.
 >>> two_sum([0, 2, 3, 0], 0)
 [0, 3]
 """
-import doctest
-
 
 # Solution 1: double loop
 # Variation 1
@@ -80,4 +78,5 @@ def two_sum(nums, target):
 
 
 if __name__ == '__main__':
+    import doctest
     doctest.testmod()
