@@ -47,6 +47,21 @@ def convert_to_binary(number):
     return '0b{:b}'.format(number)
 
 
+# Solution4: using bitwise operation
+def convert_to_binary(number):
+    if number == 0: 
+        return '0b0'
+
+    stack = []
+    while number:
+        stack.append(number & 1)  # append last bit
+        number = number >> 1  # remove last bit
+    binary_str = "0b"
+    while stack:
+        binary_str += str(stack.pop())
+    return binary_str
+
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
