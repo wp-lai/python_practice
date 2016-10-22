@@ -5,6 +5,9 @@ Date: Oct 22, 2016
 Task:
 Implement singleton design pattern
 
+>>> @singleton
+... class MyClass():
+...     pass
 >>> a = MyClass()
 >>> b = MyClass()
 >>> a is b
@@ -17,11 +20,6 @@ def singleton(cls, *args, **kwargs):
             instance[cls] = cls(*args, **kwargs)
         return instance[cls]
     return get_instance
-
-
-@singleton
-class MyClass():
-    pass
 
 
 if __name__ == '__main__':
