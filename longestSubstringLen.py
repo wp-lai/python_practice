@@ -33,7 +33,6 @@ def len_longest_substring(s):
     return max_len
 
 
-
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
