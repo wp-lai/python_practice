@@ -47,7 +47,7 @@ def convert_to_binary(number):
     return '0b{:b}'.format(number)
 
 
-# Solution4: using bitwise operation
+# Solution 4: using bitwise operation
 def convert_to_binary(number):
     if number == 0: 
         return '0b0'
@@ -60,6 +60,15 @@ def convert_to_binary(number):
     while stack:
         binary_str += str(stack.pop())
     return binary_str
+
+
+# Solution 5: using recursion
+def convert_to_binary(number):
+    digit = "01"
+    if number < 2:
+        return "0b" + digit[number]
+    else:
+        return convert_to_binary(number // 2) + digit[number % 2]
 
 
 if __name__ == '__main__':
