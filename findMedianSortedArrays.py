@@ -12,6 +12,8 @@ The overall run time complexity should be O(log(m+n)).
 2.5
 >>> find_median([6], [7])
 6.5
+>>> find_median([1], [1])
+1.0
 """
 # This problem can convert to finding the kth smallest number
 # of two sorted arrays
@@ -54,7 +56,7 @@ def find_kth(nums1, nums2, k):
     if len(nums1) < k // 2:
         return find_kth(nums1, nums2[k - k//2:], k // 2)
     elif nums1[k//2 - 1] == nums2[k - k//2 - 1]:
-        return nums[k // 2]
+        return nums1[k//2 - 1]
     elif nums1[k//2 - 1] < nums2[k - k//2 -1]:
         return find_kth(nums1[k//2:], nums2[:k - k//2], k - k//2)
     else:
