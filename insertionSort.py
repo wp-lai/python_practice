@@ -12,11 +12,12 @@ Implementing insertion sort
 []
 """
 def insert_sort(numbers):
-    numbers = numbers[:]
+    numbers = numbers[:]  # if in-place sort, remove this line
     if len(numbers) <= 1:
         return numbers
 
     for i in range(1, len(numbers)):
+        # swap to the insertion place
         while i > 0 and numbers[i-1] > numbers[i]:
             numbers[i-1], numbers[i] = numbers[i], numbers[i-1]
             i -= 1
