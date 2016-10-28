@@ -15,15 +15,17 @@ Find greatest common divisor
 # Using Euclid's algorithm
 # Variation 1
 def gcd(a, b):
-    while a % b:
+    while b:
         a, b = b, a % b
-    return b
+    return a
 
 
 # Variation 2: recursive version
 def gcd(a, b):
-    if b == 0: return a
-    return gcd(b, a % b)
+    if b == 0: 
+        return a
+    else:
+        return gcd(b, a % b)
 
 
 if __name__ == "__main__":
