@@ -5,6 +5,7 @@ Coding practices using Python
 + [Queue](queue.py)
 
 ## Algorithm
++ [Insertion Sort](insertionSort.py)
 + [Merge Sort](mergeSort.py)
 
 ## Leetcode
