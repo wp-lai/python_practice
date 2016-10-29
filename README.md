@@ -19,6 +19,7 @@ Coding practices using Python
 + [Greatest Common Divisor](gcd.py)
 + [Balanced Parentheses](balancedParentheses.py)
 + [Integer to Binary](intToBinary.py)
++ [Roman Numerals](romanNumerals.py)
 
 ## Design Pattern
 + [Singleton](singleton.py)
