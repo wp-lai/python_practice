@@ -2,8 +2,8 @@
 Author: Alan Lai
 
 Question:
-Given a string S, find the longest palindromic substring in S. 
-You may assume that the maximum length of S is 1000, 
+Given a string S, find the longest palindromic substring in S.
+You may assume that the maximum length of S is 1000,
 and there exists one unique longest palindromic substring.
 
 >>> longest_pal('a')
@@ -17,7 +17,7 @@ def longest_pal(s):
     """logest palindromic substring in s"""
     longest = ""
     for i in range(len(s)):
-        longest = max(longest, expand(i, s), 
+        longest = max(longest, expand(i, s),
                       expand(i, s, offset=True), key=len)
     return longest
 

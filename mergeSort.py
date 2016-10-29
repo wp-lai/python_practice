@@ -32,7 +32,7 @@ def merge(left, right):
     """
     i, j = 0, 0
     res = []
-    
+
     while True:
         if left[i] <= right[j]:
             res.append(left[i])

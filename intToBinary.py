@@ -20,11 +20,11 @@ Converting decimal numbers to binary numbers
 >>> convert_to_binary(1)
 '0b1'
 """
-# Solution 1: 
+# Solution 1:
 # keep dividing by 2, store the remainder in a stack
 # read in reverse order
 def convert_to_binary(number):
-    if number == 0: 
+    if number == 0:
         return '0b0'
 
     stack = []
@@ -49,7 +49,7 @@ def convert_to_binary(number):
 
 # Solution 4: using bitwise operation
 def convert_to_binary(number):
-    if number == 0: 
+    if number == 0:
         return '0b0'
 
     stack = []

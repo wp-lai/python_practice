@@ -36,7 +36,7 @@ class Stack:
         if self.is_empty():
             raise IndexError("pop from empty stack")
         return self.content.pop()
-    
+
     def peek(self):
         return self.content[-1]
 

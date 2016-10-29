@@ -3,7 +3,7 @@ Author: Alan Lai
 Date: Oct 17, 2016
 
 Question:
-Given an array of integers, return indices of the two numbers 
+Given an array of integers, return indices of the two numbers
 such that they add up to a specific target.
 
 >>> two_sum([3, 2, 4], 6)
@@ -37,8 +37,8 @@ def two_sum(nums, target):
 
 # Variation 3
 def two_sum(nums, target):
-    found = [[i, j] 
-             for i in range(len(nums)) 
+    found = [[i, j]
+             for i in range(len(nums))
              for j in range(i+1, len(nums))
              if nums[i] + nums[j] == target]
     if found:
@@ -50,7 +50,7 @@ def two_sum(nums, target):
 # Solution 2: two-pass hash table
 def two_sum(nums, target):
     map_ = {}
-    # build a {element: index} map 
+    # build a {element: index} map
     for i, num in enumerate(nums):
         map_[num] = i
 
@@ -66,7 +66,7 @@ def two_sum(nums, target):
 # Solution 3: one-pass hash table
 def two_sum(nums, target):
     map_ = {}
-    
+
     # build map while iter
     for i, num in enumerate(nums):
         complement = target - num

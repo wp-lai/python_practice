@@ -3,10 +3,10 @@ Author: Alan Lai
 Date: Oct 19, 2016
 
 Question:
-Balanced parentheses means that each opening symbol 
-has a corresponding closing symbol and the pairs of 
-parentheses are properly nested. 
-Write an algorithm that will read a string of parentheses 
+Balanced parentheses means that each opening symbol
+has a corresponding closing symbol and the pairs of
+parentheses are properly nested.
+Write an algorithm that will read a string of parentheses
 from left to right and decide whether the symbols are balanced.
 
 >>> is_balanced("(()()()())")
@@ -36,7 +36,7 @@ def is_balanced(str_):
         elif char == ')':
             if not stack:  # empty stack
                 return False
-            if stack[-1] == '(': 
+            if stack[-1] == '(':
                 stack.pop()
             else:
                 return False
@@ -59,7 +59,7 @@ def is_balanced(str_):
         elif char in ")]}":
             if not stack:  # empty stack
                 return False
-            
+
             top = stack[-1]
             # check whether current char matches stack top
             if matches(top, char):

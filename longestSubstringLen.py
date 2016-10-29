@@ -3,7 +3,7 @@ Author: Alan Lai
 Date: Oct 22, 2016
 
 Question:
-Given a string, find the length of the 
+Given a string, find the length of the
 longest substring without repeating characters.
 
 

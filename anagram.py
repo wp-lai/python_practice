@@ -3,9 +3,9 @@ Author: Alan Lai
 Date: Oct 19, 2016
 
 Question: Anagram Detection
-One string is an anagram of another if the second is 
+One string is an anagram of another if the second is
 simply a rearrangement of the first.
-Write a boolean function that will take two strings 
+Write a boolean function that will take two strings
 and return whether they are anagrams.
 
 >>> is_anagram('heart', 'earth')
