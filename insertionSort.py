@@ -18,9 +18,12 @@ def insert_sort(numbers):
 
     for i in range(1, len(numbers)):
         # swap to the insertion place
-        while i > 0 and numbers[i-1] > numbers[i]:
-            numbers[i-1], numbers[i] = numbers[i], numbers[i-1]
-            i -= 1
+        key = numbers[i]
+        j = i - 1
+        while j >= 0 and numbers[j] > key:
+            numbers[j+1] = numbers[j]
+            j -= 1
+        numbers[j+1] = key
 
     return numbers
 
