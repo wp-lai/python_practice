@@ -3,7 +3,8 @@ Author: Alan Lai
 
 Question:
 Given a list of data, and a list of boolean value as selector,
-Form a list of selected data.
+Form a list of selected data, choose element from data whenever
+the cooresponding item in selector is truthy.
 
 >>> data = [2, 3, 4, 5]
 >>> selector = [True, True, False, True]
