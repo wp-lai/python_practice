@@ -20,6 +20,7 @@ Coding practices using Python
 + [Balanced Parentheses](balancedParentheses.py)
 + [Integer to Binary](intToBinary.py)
 + [Roman Numerals](romanNumerals.py)
++ [Compute Running Average](runningAvg.py)
 
 ## Design Pattern
 + [Singleton](singleton.py)
