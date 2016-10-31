@@ -23,3 +23,6 @@ Coding practices using Python
 
 ## Design Pattern
 + [Singleton](singleton.py)
+
+## Cookbook
++ [Select according to a bool list](selectFromList.py)
