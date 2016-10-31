@@ -26,7 +26,11 @@ def running_avg(data):
     return list(starmap(lambda i, n: n / i, enumerate(accumulate(data), 1)))
 
 
+# one-liner with less efficiency
+def running_avg(data):
+    return [sum(data[:i]) / float(i) for i in range(1, len(data)+1)]
+
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-
