@@ -27,4 +27,4 @@ Coding practices using Python
 
 ## Cookbook
 + [Select according to a bool list](selectFromList.py)
-+ [build a fibonacci generator](fibonacci.py)
++ [Build a fibonacci generator](fibonacci.py)
