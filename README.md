@@ -7,6 +7,7 @@ Coding practices using Python
 ## Algorithm
 + [Insertion Sort](insertionSort.py)
 + [Merge Sort](mergeSort.py)
++ [Heap Sort](heapSort.py)
 
 ## Leetcode
 + [Two Sum](twoSum.py)
