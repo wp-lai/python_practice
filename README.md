@@ -23,6 +23,7 @@ Coding practices using Python
 + [Integer to Binary](intToBinary.py)
 + [Roman Numerals](romanNumerals.py)
 + [Compute Running Average](runningAvg.py)
++ [Modular Exponentiation](modularExponentiation.py)
 
 ## Design Pattern
 + [Singleton](singleton.py)
