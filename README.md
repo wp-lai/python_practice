@@ -3,6 +3,7 @@ Coding practices using Python
 ## Data Structure
 + [Stack](stack.py)
 + [Queue](queue.py)
++ [Binary Search Tree](BST.py)
 
 ## Algorithm
 + [Insertion Sort](insertionSort.py)

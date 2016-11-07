@@ -1,3 +1,12 @@
+"""
+Task:
+Implementing a Binary Search Tree
+
+Reference:
+Mit6.006 fall2011 lecture 5
+"""
+
+
 class BSTNode:
     """A node in Binary Search Tree."""
 
