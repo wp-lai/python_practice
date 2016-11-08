@@ -17,8 +17,8 @@ True
 # Solution 1
 def mod_pow(base, exponent, modulus):
     result = 1
-    for i in range(1, exponent + 1):
-        result = (c * base) % modulus
+    for _ in range(1, exponent + 1):
+        result = (result * base) % modulus
     return result
 
 
