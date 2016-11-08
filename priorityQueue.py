@@ -62,9 +62,9 @@ class PriorityQueue:
                 if current_min == self.heap[current]:
                     break
                 elif current_min == self.heap[left]:
-                     self.heap[current], self.heap[left] = \
+                    self.heap[current], self.heap[left] = \
                         self.heap[left], self.heap[current]
-                     current = left
+                    current = left
                 else:
                     self.heap[current], self.heap[right] = \
                         self.heap[right], self.heap[current]
@@ -75,4 +75,3 @@ class PriorityQueue:
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-
