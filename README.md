@@ -4,6 +4,7 @@ Coding practices using Python
 + [Stack](stack.py)
 + [Queue](queue.py)
 + [Binary Search Tree](BST.py)
++ [Priority Queue](priorityQueue.py)
 
 ## Algorithm
 + [Insertion Sort](insertionSort.py)
