@@ -20,6 +20,8 @@ Converting decimal numbers to binary numbers
 >>> convert_to_binary(1)
 '0b1'
 """
+
+
 # Solution 1:
 # keep dividing by 2, store the remainder in a stack
 # read in reverse order

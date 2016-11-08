@@ -9,6 +9,8 @@ Implementing heapsort alogrithm
 >>> heapsort([5, 39, 434, 22, 43, 857, 4, 58])
 [4, 5, 22, 39, 43, 58, 434, 857]
 """
+
+
 def heapsort(nums):
     # turn into max-heap
     n = len(nums)
@@ -17,7 +19,7 @@ def heapsort(nums):
 
     # heapsort
     while n > 0:
-        nums[0], nums[n-1] = nums[n-1], nums[0]
+        nums[0], nums[n - 1] = nums[n - 1], nums[0]
         n -= 1
         heapify(nums, 0, n)
 

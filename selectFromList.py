@@ -11,6 +11,8 @@ the cooresponding item in selector is truthy.
 >>> select_from_list(data, selector)
 [2, 3, 5]
 """
+
+
 # Solution 1: using generator comprehension
 def select_from_list(data, selector):
     return (e for e, s in zip(data, selector) if s)

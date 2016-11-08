@@ -27,6 +27,8 @@ True
 >>> is_balanced("[{()]")
 False
 """
+
+
 # Version 1: Only check '(' and ')'
 def is_balanced(str_):
     stack = []
@@ -94,4 +96,3 @@ def matches(char1, char2):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-

@@ -3,33 +3,33 @@ Coding practices using Python
 ## Data Structure
 + [Stack](stack.py)
 + [Queue](queue.py)
-+ [Binary Search Tree](BST.py)
-+ [Priority Queue](priorityQueue.py)
++ [Binary Search Tree](bst.py)
++ [Priority Queue](priorityqueue.py)
 
 ## Algorithm
-+ [Insertion Sort](insertionSort.py)
-+ [Merge Sort](mergeSort.py)
-+ [Heap Sort](heapSort.py)
++ [Insertion Sort](insertionsort.py)
++ [Merge Sort](mergesort.py)
++ [Heap Sort](heapsort.py)
 
 ## Leetcode
-+ [Two Sum](twoSum.py)
-+ [Longest Substring Without Repeating Characters](longestSubstringLen.py)
-+ [Median of Two Sorted Arrays](findMedianSortedArrays.py)
-+ [Longest Palindromic Substring](longestSubstringLen.py)
++ [Two Sum](twosum.py)
++ [Longest Substring Without Repeating Characters](longestsubstringlen.py)
++ [Median of Two Sorted Arrays](findmediansortedarrays.py)
++ [Longest Palindromic Substring](longestpalindrome.py)
 
 ## Other code challenges
 + [Anagram Detection](anagram.py)
 + [Greatest Common Divisor](gcd.py)
-+ [Balanced Parentheses](balancedParentheses.py)
-+ [Integer to Binary](intToBinary.py)
-+ [Roman Numerals](romanNumerals.py)
-+ [Compute Running Average](runningAvg.py)
-+ [Modular Exponentiation](modularExponentiation.py)
++ [Balanced Parentheses](balancedparentheses.py)
++ [Integer to Binary](int2Binary.py)
++ [Roman Numerals](romannumerals.py)
++ [Compute Running Average](runningavg.py)
++ [Modular Exponentiation](modexp.py)
 
 ## Design Pattern
 + [Singleton](singleton.py)
 
 ## Cookbook
-+ [Select according to a bool list](selectFromList.py)
++ [Select according to a bool list](selectfromlist.py)
 + [Build a fibonacci generator](fibonacci.py)
 + [Implement Least Recent Used cache](lru.py)

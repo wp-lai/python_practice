@@ -18,6 +18,8 @@ longest substring without repeating characters.
 >>> len_longest_substring("a")
 1
 """
+
+
 def len_longest_substring(s):
     start = 0
     # dict to keep the index of seen characters

@@ -20,6 +20,8 @@ True
 >>> is_anagram('anagram', 'hangram')
 False
 """
+
+
 # Solution 1: sort and compare
 def is_anagram(str1, str2):
     return sorted(str1) == sorted(str2)

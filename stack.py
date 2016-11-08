@@ -25,6 +25,8 @@ True
 >>> s.size()
 2
 """
+
+
 class Stack:
     def __init__(self):
         self.content = []

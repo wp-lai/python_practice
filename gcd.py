@@ -12,6 +12,8 @@ Find greatest common divisor
 >>> gcd(299792458, 6447287)
 511
 """
+
+
 # Using Euclid's algorithm
 # Variation 1
 def gcd(a, b):

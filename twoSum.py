@@ -16,6 +16,7 @@ such that they add up to a specific target.
 [0, 3]
 """
 
+
 # Solution 1: double loop
 # Variation 1
 def two_sum(nums, target):
@@ -29,7 +30,7 @@ def two_sum(nums, target):
 # Variation 2
 def two_sum(nums, target):
     for i, left_num in enumerate(nums):
-        for j, right_num in enumerate(nums[i+1:], start=i+1):
+        for j, right_num in enumerate(nums[i + 1:], start=i + 1):
             if left_num + right_num == target:
                 return [i, j]
     return None
@@ -37,9 +38,7 @@ def two_sum(nums, target):
 
 # Variation 3
 def two_sum(nums, target):
-    found = [[i, j]
-             for i in range(len(nums))
-             for j in range(i+1, len(nums))
+    found = [[i, j] for i in range(len(nums)) for j in range(i + 1, len(nums))
              if nums[i] + nums[j] == target]
     if found:
         return found[0]

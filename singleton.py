@@ -13,12 +13,16 @@ Implement singleton design pattern
 >>> a is b
 True
 """
+
+
 def singleton(cls, *args, **kwargs):
     instance = {}
+
     def get_instance(*args, **kwargs):
         if cls not in instance:
             instance[cls] = cls(*args, **kwargs)
         return instance[cls]
+
     return get_instance
 
 

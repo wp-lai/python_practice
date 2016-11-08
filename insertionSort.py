@@ -11,6 +11,8 @@ Implementing insertion sort
 >>> insert_sort([])
 []
 """
+
+
 def insert_sort(numbers):
     numbers = numbers[:]  # if in-place sort, remove this line
     if len(numbers) <= 1:
@@ -21,9 +23,9 @@ def insert_sort(numbers):
         key = numbers[i]
         j = i - 1
         while j >= 0 and numbers[j] > key:
-            numbers[j+1] = numbers[j]
+            numbers[j + 1] = numbers[j]
             j -= 1
-        numbers[j+1] = key
+        numbers[j + 1] = key
 
     return numbers
 

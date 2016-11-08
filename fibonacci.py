@@ -15,6 +15,8 @@ Build a generator that generates fibonacci series
 3
 5
 """
+
+
 def fibonacci():
     a, b = 0, 1
     while True:

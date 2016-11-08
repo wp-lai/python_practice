@@ -13,6 +13,8 @@ Using merge sort algorithm to sort an array of numbers
 >>> merge_sort([4, 5, 8, 9, 3, 6])
 [3, 4, 5, 6, 8, 9]
 """
+
+
 def merge_sort(numbers):
     length = len(numbers)
     if length <= 1:

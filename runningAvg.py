@@ -7,6 +7,11 @@ Compute running average of a list of data
 >>> running_avg([5, 4, 2, 8, 7, 6])
 [5.0, 4.5, 3.6666666666666665, 4.75, 5.2, 5.333333333333333]
 """
+# wrap into one-liner
+# itertools.accumulate only exists in  Python 3
+from itertools import accumulate, starmap
+
+
 def running_avg(data):
     accumulate_sum = []
     running_sum = 0
@@ -20,15 +25,13 @@ def running_avg(data):
 
 
 # wrap into one-liner
-# itertools.accumulate only exists in  Python 3
-from itertools import accumulate, starmap
 def running_avg(data):
     return list(starmap(lambda i, n: n / i, enumerate(accumulate(data), 1)))
 
 
 # one-liner with less efficiency
 def running_avg(data):
-    return [sum(data[:i]) / float(i) for i in range(1, len(data)+1)]
+    return [sum(data[:i]) / float(i) for i in range(1, len(data) + 1)]
 
 
 if __name__ == '__main__':
