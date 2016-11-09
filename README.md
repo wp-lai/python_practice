@@ -7,6 +7,7 @@ Coding practices using Python
 + [Priority Queue](priorityqueue.py)
 
 ## Algorithm
++ [Bubble Sort](bubblesort.py)
 + [Insertion Sort](insertionsort.py)
 + [Merge Sort](mergesort.py)
 + [Heap Sort](heapsort.py)
