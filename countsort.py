@@ -11,24 +11,24 @@ Sorts integers from range [0, k)
 
 def count_sort(L, k):
     # build a counter
-    C = [0] * k
+    cnt = [0] * k
     for i in L:
-        C[i] += 1
+        cnt[i] += 1
 
     # build a cumulative counter
-    C_cum = [0] * k
+    cum = [0] * k
     for i in range(k):
         if i == 0:
-            C_cum[i] = C[i]
+            cum[i] = cnt[i]
         else:
-            C_cum[i] = C_cum[i - 1] + C[i]
+            cum[i] = cum[i - 1] + cnt[i]
 
-    # build output list
-    output = [None] * len(L)
+    # build out list
+    out = [None] * len(L)
     for j in reversed(L):
-        output[C_cum[j] - 1] = j
-        C_cum[j] -= 1
-    return output
+        out[cum[j] - 1] = j
+        cum[j] -= 1
+    return out
 
 
 if __name__ == '__main__':
