@@ -35,3 +35,4 @@ Coding practices using Python
 + [Select according to a bool list](selectfromlist.py)
 + [Build a fibonacci generator](fibonacci.py)
 + [Implement Least Recent Used cache](lru.py)
++ [Print text in reversed order in Context Manager](mirror.py)
