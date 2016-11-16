@@ -15,20 +15,39 @@ eurT
 >>> print("hello world!")
 hello world!
 """
+from contextlib import contextmanager
 
 
-class Mirror(object):
-    def __enter__(self):
-        import sys
-        self.writer = sys.stdout.write
-        sys.stdout.write = self.reverse_writer
+@contextmanager
+def Mirror():
+    # __enter__
+    import sys
+    old_writer = sys.stdout.write
 
-    def reverse_writer(self, text):
-        return self.writer(text[::-1])
+    def reverse_writer(text):
+        return old_writer(text[::-1])
 
-    def __exit__(self, exc_type, exc_value, traceback):
-        import sys
-        sys.stdout.write = self.writer
+    sys.stdout.write = reverse_writer
+
+    yield
+
+    # __exit__
+    sys.stdout.write = old_writer
+
+
+# Equals to the following
+# class Mirror(object):
+#     def __enter__(self):
+#         import sys
+#         self.writer = sys.stdout.write
+#         sys.stdout.write = self.reverse_writer
+#
+#     def reverse_writer(self, text):
+#         return self.writer(text[::-1])
+#
+#     def __exit__(self, exc_type, exc_value, traceback):
+#         import sys
+#         sys.stdout.write = self.writer
 
 
 if __name__ == '__main__':
