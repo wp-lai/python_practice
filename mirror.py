@@ -29,10 +29,11 @@ def Mirror():
 
     sys.stdout.write = reverse_writer
 
-    yield
-
-    # __exit__
-    sys.stdout.write = old_writer
+    try:
+        yield
+    finally:
+        # __exit__
+        sys.stdout.write = old_writer
 
 
 # Equals to the following
