@@ -5,9 +5,9 @@ Task:
     Use context manager for timing code
 
 >>> from time import sleep
->>> with timing():
+>>> with timing():  # doctest:+ELLIPSIS
 ...    sleep(10)
-Time spend 10.00s
+Time spend 10...s
 """
 import time
 from contextlib import contextmanager
