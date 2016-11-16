@@ -6,10 +6,12 @@ Task:
 References:
     "Fluent Python" Chapter 15
 
->>> with Mirror():
+>>> with Mirror() as m:
 ...    print("hello world!")
+...    print(m is None)
 ...
 !dlrow olleh
+eurT
 >>> print("hello world!")
 hello world!
 """
