@@ -36,3 +36,4 @@ Coding practices using Python
 + [Build a fibonacci generator](fibonacci.py)
 + [Implement Least Recent Used cache](lru.py)
 + [Print text in reversed order in Context Manager](mirror.py)
++ [Use context manager for timing code](timing.py)
