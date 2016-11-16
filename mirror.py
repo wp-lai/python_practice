@@ -1,6 +1,6 @@
 """
 Task:
-    Implement a Mirror class as a context manager
+    Implement a Mirror context manager
     within which the output text display in reversed order
 
 References:
