@@ -23,7 +23,7 @@ Coding practices using Python
 + [Anagram Detection](anagram.py)
 + [Greatest Common Divisor](gcd.py)
 + [Balanced Parentheses](balancedparentheses.py)
-+ [Integer to Binary](int2Binary.py)
++ [Integer to Binary](int2binary.py)
 + [Roman Numerals](romannumerals.py)
 + [Compute Running Average](runningavg.py)
 + [Modular Exponentiation](modexp.py)
