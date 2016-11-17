@@ -1,5 +1,8 @@
 Coding practices using Python
 
+** Deprecated, move to [other repo](https://github.com/wp-lai/xpython) **
+
+
 ## Data Structure
 + [Stack](stack.py)
 + [Queue](queue.py)
