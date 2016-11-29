@@ -15,6 +15,7 @@ Coding practices using Python
 + [Merge Sort](mergesort.py)
 + [Heap Sort](heapsort.py)
 + [Count Sort](countsort.py)
++ [Quick Sort](quick_sort.py)
 
 ## Leetcode
 + [Two Sum](twosum.py)
